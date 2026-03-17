@@ -19,7 +19,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.parcialcomponentes.model.Reserva
 import com.example.parcialcomponentes.ui.*
-import com.example.parcialcomponentes.ui.theme.ParcialComponentesTheme
+import com.example.parcialcomp.ui.theme.ParcialCompTheme
 import com.example.parcialcomponentes.viewmodel.ReservaViewModel
 
 class MainActivity : ComponentActivity() {
@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ParcialComponentesTheme {
+            ParcialCompTheme {
                 AppNavigation(viewModel)
             }
         }
